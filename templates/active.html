@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Подтверждение email{% endblock %}
+{% block content %}
+{% load user_filters %}
+
+<div>
+<p>Введите код, который пришел Вамна email <br>
+</p>
+<form method="post" >
+    {% csrf_token %}
+    <p><input type="number"name="num"></p>
+    <button type="submit">Выложить</button>
+</form>
+</div>
+{% endblock %}

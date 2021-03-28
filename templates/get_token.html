@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}API TOKEN{% endblock %}
+{% block content %}
+{% load user_filters %}
+
+<div>
+<p>Ваш Token {{ token }}</p>
+</div>
+    <a href="{% url 'users' user.username %}">Посмотреть реализацию API</a>
+{% endblock %}
