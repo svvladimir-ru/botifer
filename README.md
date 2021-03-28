@@ -25,7 +25,6 @@ $ pip install virtualenv
 $ virtualenv 'название виртуального окружения', либо python3 -m venv 'название виртуального окружения'
 $ venv 'название виртуального окружения'/Scripts(или bin для linux)/activate
 $ pip install -r requirements.txt
-$ docker run -d -p 6379:6379 redis
 $ celery -A botifer worker -l INFO
 $ python manage.py collectstatic
 $ python manage.py makemigrations
