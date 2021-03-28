@@ -158,5 +158,4 @@ LOGGING = {
     "loggers": {"django.db.backends": {"handlers": ["console"], "level": "DEBUG"}},
 }
 
-os.environ.get('GOOGLE_RECAPTCHA_SECRET_KEY')
 GOOGLE_RECAPTCHA_SECRET_KEY = os.environ.get('GOOGLE_RECAPTCHA_SECRET_KEY')
